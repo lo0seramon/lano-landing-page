@@ -1,29 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../../../../components/ui/button";
 import {
   ToggleGroup,
   ToggleGroupItem,
 } from "../../../../components/ui/toggle-group";
 
+const translations = {
+  EN: {
+    earlyAccess: "Get early access ↗"
+  },
+  ES: {
+    earlyAccess: "Get early access ↗"
+  },
+  PT: {
+    earlyAccess: "Obter acesso antecipado ↗"
+  }
+};
+
 export const AboutUsSection = (): JSX.Element => {
-  // Language options data
+  const [currentLanguage, setCurrentLanguage] = useState("EN");
+
   const languages = [
-    { code: "EN", selected: true },
-    { code: "ES", selected: false },
-    { code: "PT", selected: false },
+    { code: "EN", selected: currentLanguage === "EN" },
+    { code: "ES", selected: currentLanguage === "ES" },
+    { code: "PT", selected: currentLanguage === "PT" },
   ];
+
+  const handleLanguageChange = (value: string) => {
+    setCurrentLanguage(value);
+  };
 
   return (
     <section className="flex flex-col items-start gap-[50px] w-full">
       <header className="w-full flex justify-between items-center">
         <div className="flex items-center gap-6">
           <h1 className="font-black text-black text-5xl leading-[48px] font-['Geist',Helvetica]">
-            lan
+            lano
           </h1>
 
           <ToggleGroup
             type="single"
-            defaultValue="EN"
+            value={currentLanguage}
+            onValueChange={handleLanguageChange}
             className="flex items-center gap-1"
           >
             {languages.map((lang) => (
@@ -46,7 +64,7 @@ export const AboutUsSection = (): JSX.Element => {
           href="#"
           className="font-['Geist_Mono',Helvetica] font-bold text-black text-2xl text-right tracking-[-1.20px] leading-6"
         >
-          Get early access ↗
+          {translations[currentLanguage as keyof typeof translations].earlyAccess}
         </a>
       </header>
 
