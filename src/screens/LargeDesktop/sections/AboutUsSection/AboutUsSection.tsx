@@ -18,7 +18,7 @@ export const AboutUsSection = (): JSX.Element => {
       <header className="w-full flex justify-between items-center">
         <div className="flex items-center gap-6">
           <h1 className="font-black text-black text-5xl leading-[48px] font-['Geist',Helvetica]">
-            lano
+            lan
           </h1>
 
           <ToggleGroup
