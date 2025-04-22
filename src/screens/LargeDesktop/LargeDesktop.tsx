@@ -12,7 +12,7 @@ import { TestimonialsSection } from "./sections/TestimonialsSection";
 export const LargeDesktop = (): JSX.Element => {
   return (
     <div className="flex flex-col items-start relative bg-white">
-      <div className="flex flex-col items-start gap-16 px-[100px] py-[100px] relative self-stretch w-full">
+      <div className="flex flex-col items-start gap-16 px-4 sm:px-8 md:px-16 lg:px-[100px] py-10 md:py-16 lg:py-[100px] relative self-stretch w-full">
         <AboutUsSection />
         <TestimonialsSection />
         <IntroductionSection />
