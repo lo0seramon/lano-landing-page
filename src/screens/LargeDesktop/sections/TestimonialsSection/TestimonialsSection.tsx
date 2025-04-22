@@ -1,43 +1,41 @@
 import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { Switch } from "../../../../components/ui/switch";
+import { useLanguage } from "../../../../i18n/LanguageContext";
+import { LanguageSwitcher } from "../../../../components/LanguageSwitcher";
 
 export const TestimonialsSection = (): JSX.Element => {
+  const { t } = useLanguage();
   // Testimonial data for mapping
   const testimonials = [
     {
       id: 1,
-      title: "Bills just catch me by surprise.",
-      description:
-        '"It\'s stressful to plan out my money and get ready for unexpected expenses that come out of the wild blue."',
+      title:  t('painPoint1Title'),
+      description: t('painPoint1Desc'),
       active: true,
     },
     {
       id: 2,
-      title: "Cash sits idle, everywhere.",
-      description:
-        '"I have no idea what to do with my money; it\'s hard to know where to put and make the most out of it."',
+      title: t('painPoint2Title'),
+      description: t('painPoint2Desc'),
       active: false,
     },
     {
       id: 3,
-      title: "Balance? Honestly no clue.",
-      description:
-        '"Honestly, I don\'t even know how much I have; my money is everywhere and I have no head to sort it out."',
+      title: t('painPoint3Title'),
+      description: t('painPoint3Desc'), 
       active: false,
     },
     {
       id: 4,
-      title: "Spend first, pray later.",
-      description:
-        '"My money is out of control. I spend first and save what is left, hoping the best will come."',
+      title: t('painPoint4Title'),
+      description: t('painPoint4Desc'),
       active: false,
     },
     {
       id: 5,
-      title: "Money choices overwhelm me.",
-      description:
-        '"I neglect any money decisions. Everything seems too complex, too risky, and too demanding."',
+      title: t('painPoint5Title'),
+      description: t('painPoint5Desc'),
       active: false,
     },
   ];
@@ -45,7 +43,7 @@ export const TestimonialsSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-start gap-[52px] w-full">
       <h2 className="self-stretch [font-family:'Geist',Helvetica] font-bold text-black text-8xl tracking-[0] leading-[96px]">
-        Does this hit home?
+      {t('reasonTitle')}
       </h2>
 
       <div className="flex flex-col items-start gap-8 w-full">
