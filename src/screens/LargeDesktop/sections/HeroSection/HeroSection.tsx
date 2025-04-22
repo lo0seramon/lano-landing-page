@@ -33,7 +33,7 @@ export const HeroSection = (): JSX.Element => {
 
   return (
     <section className="flex flex-col w-full items-start gap-[50px] relative overflow-hidden">
-      <h2 className="relative self-stretch [font-family:'Geist',Helvetica] font-bold text-black text-8xl tracking-[-4.80px] leading-[96px]">
+      <h2 className="self-stretch [font-family:'Geist',Helvetica] font-bold text-black text-3xl sm:text-5xl md:text-8xl tracking-[0] leading-tight md:leading-[96px]">
         How does it work?
       </h2>
 
