@@ -22,7 +22,7 @@ export type TranslationKeys =
   'painPoint5Title' | 'painPoint5Desc' | 'notAloneTitle' | 'notAloneDesc' |
   
   // Product Description
-  'meetLanoTitle' | 'meetLanoDesc1' | 'meetLanoDesc2' | 'meetLanoDesc3' | 'meetLanoDesc4' |
+  'meetLanoTitle' | 'meetLanoTitle1' | 'meetLanoDesc1' | 'meetLanoDesc2' | 'meetLanoDesc3' | 'meetLanoDesc4' |
   
   // How It Works
   'howItWorksTitle' | 'step1' | 'step2' | 'step3' | 'step4' | 'step5' |
@@ -97,10 +97,11 @@ export const translations: TranslationsType = {
     notAloneDesc: "Around half (47 percent) of U.S. adults say money has a negative impact on their mental health, at least occasionally, causing anxiety, stress, worrisome thoughts, loss of sleep, depression or other effects. About two‑thirds of Americans (64 percent) do not have a formal financial plan. Only a small portion (18 percent) of people feel they are on top of their finances. More than half (56 percent) of Latinos do not have any emergency or buffer fund, reporting less than $400 in their savings account. Today, an average consumer has around $105,056 in mortgage, medical or credit‑card debt.",
 
     // Product Description
-    meetLanoTitle: "Meet Lano, your trusted money pilot.",
-    meetLanoDesc1: "We turn everyday spending into automatic savings — faster, easier, stress‑free.",
-    meetLanoDesc2: "Pay with Lano and we save a bit for you. Little by little. As simple as that.",
-    meetLanoDesc3: "Lano is built for people, not spreadsheets: more care, less jargon.",
+    meetLanoTitle: "Meet Lano,",
+    meetLanoTitle1: " your trusted money pilot.",
+    meetLanoDesc1: "We turn everyday spending into automatic savings — ",
+    meetLanoDesc2: "faster, easier, stress‑free.",
+    meetLanoDesc3: "Pay with Lano and we save a bit for you. Little by little. As simple as that. Lano is built for people, not spreadsheets: more care, less jargon.",
     meetLanoDesc4: "Simple. Inclusive. Transparent. Uncompromised.",
 
     // How It Works
@@ -128,7 +129,7 @@ export const translations: TranslationsType = {
     faq1Question: "What is Lano?",
     faq1Answer: "A bilingual money app that automates saving, spending and investing effortlessly during your day-to-day transactions — built especially for Latinos in the U.S..",
     faq2Question: "How was Lano born?",
-    faq2Answer: "Lano was invented out of frustration with solutions like Apple Pay and Nubank, solutions that could be truly useful in our day-to-day lives but turned out to fail to add value.",
+    faq2Answer: "Lano was invented out of frustration with solutions like Apple Pay and Nubank, solutions that could be truly useful in our day-to-day lives but turned out to fail to add genuíno value.",
     faq3Question: "What can I do with Lano?",
     faq3Answer: "Grow your savings, such as your emergency fund. Get detailed insights on your spendings and investments. Answer financial questions in your daily life. Plan and replan any money moves with curated know-how. (Coming soon) Set investments automatically and receive personalized money advices.",
     faq4Question: "Is Lano already available?",
@@ -138,7 +139,7 @@ export const translations: TranslationsType = {
     faq6Question: "What makes Lano different?",
     faq6Answer: "Transparent codes, systems and protocols, and a Latino‑led team obsessed with behavioral change — not just dashboards.",
     faq7Question: "How is my money protected?",
-    faq7Answer: "Funds sit in FDIC‑insured partner banks (up to $250,000 per user) and all data is end‑to‑end encrypted."
+    faq7Answer: "Funds sit in FDIC‑insured partner banks (up to $250,000 per user) and all data is end‑to‑end encrypted."
   },
   ES: {
     // Header/Navigation
@@ -195,9 +196,9 @@ export const translations: TranslationsType = {
 
     // Product Description
     meetLanoTitle: "Conocé Lano, tu piloto de confianza",
-    meetLanoDesc1: "Convertimos cada gasto cotidiano en ahorro automático — rápido, fácil y sin estrés.",
-    meetLanoDesc2: "Pagá con Lano y ahorramos un poquito por vos. De a poco. Así de simple.",
-    meetLanoDesc3: "Hecho para personas, no planillas: más cuidado, menos jerga.",
+    meetLanoDesc1: "Convertimos cada gasto cotidiano en ahorro automático —",
+    meetLanoDesc2: "rápido, fácil y sin estrés.",
+    meetLanoDesc3: "Pagá con Lano y ahorramos un poquito por vos. De a poco. Así de simple. Hecho para personas, no planillas: más cuidado, menos jerga.",
     meetLanoDesc4: "Simple. Inclusiva. Transparente. Sin compromisos.",
 
     // How It Works
@@ -292,9 +293,9 @@ export const translations: TranslationsType = {
 
     // Product Description
     meetLanoTitle: "Conheça a Lano, seu copiloto financeiro",
-    meetLanoDesc1: "Transformamos gastos do dia a dia em poupança automática — rápido, fácil, sem estresse.",
-    meetLanoDesc2: "Pague com Lano e guardamos um pouquinho pra você. De grão em grão. Simples assim.",
-    meetLanoDesc3: "Lano é feita para pessoas, não planilhas: mais cuidado, menos jargão.",
+    meetLanoDesc1: "Transformamos gastos do dia a dia em poupança automática — ",
+    meetLanoDesc2: "rápido, fácil, sem estresse.",
+    meetLanoDesc3: "Pague com Lano e guardamos um pouquinho pra você. De grão em grão. Simples assim. Lano é feita para pessoas, não planilhas: mais cuidado, menos jargão.",
     meetLanoDesc4: "Simples. Inclusiva. Transparente. Sem concessões.",
 
     // How It Works
