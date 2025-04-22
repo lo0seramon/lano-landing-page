@@ -129,7 +129,7 @@ export const translations: TranslationsType = {
     faq1Question: "What is Lano?",
     faq1Answer: "A bilingual money app that automates saving, spending and investing effortlessly during your day-to-day transactions — built especially for Latinos in the U.S..",
     faq2Question: "How was Lano born?",
-    faq2Answer: "Lano was invented out of frustration with solutions like Apple Pay and Nubank, solutions that could be truly useful in our day-to-day lives but turned out to fail to add value.",
+    faq2Answer: "Lano was invented out of frustration with solutions like Apple Pay and Nubank, solutions that could be truly useful in our day-to-day lives but turned out to fail to add genuíno value.",
     faq3Question: "What can I do with Lano?",
     faq3Answer: "Grow your savings, such as your emergency fund. Get detailed insights on your spendings and investments. Answer financial questions in your daily life. Plan and replan any money moves with curated know-how. (Coming soon) Set investments automatically and receive personalized money advices.",
     faq4Question: "Is Lano already available?",
@@ -139,7 +139,7 @@ export const translations: TranslationsType = {
     faq6Question: "What makes Lano different?",
     faq6Answer: "Transparent codes, systems and protocols, and a Latino‑led team obsessed with behavioral change — not just dashboards.",
     faq7Question: "How is my money protected?",
-    faq7Answer: "Funds sit in FDIC‑insured partner banks (up to $250,000 per user) and all data is end‑to‑end encrypted."
+    faq7Answer: "Funds sit in FDIC‑insured partner banks (up to $250,000 per user) and all data is end‑to‑end encrypted."
   },
   ES: {
     // Header/Navigation

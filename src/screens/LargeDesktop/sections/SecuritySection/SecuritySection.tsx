@@ -5,62 +5,44 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../../../components/ui/accordion";
+import { useLanguage } from "../../../../i18n/LanguageContext";
+import { LanguageSwitcher } from "../../../../components/LanguageSwitcher";
+
 
 export const SecuritySection = (): JSX.Element => {
+  const { t } = useLanguage();
+  
   // FAQ data for mapping
   const faqItems = [
     {
-      question: "What is Lano?",
-      answer: "Information about Lano will appear here when expanded.",
+      question: t('faq1Question'),
+      answer: t('faq1Answer'),
     },
     {
-      question: "What can I do with Lano?",
+      question: t('faq2Question'),
       answer:
-        "Details about Lano's features and capabilities will appear here.",
+      t('faq2Answer'),
     },
     {
-      question: "Is Lano already available?",
-      answer: "Information about Lano's availability will appear here.",
+      question: t('faq3Question'),
+      answer: t('faq3Answer'),
     },
     {
-      question: "Why should I use Lano?",
-      answer: "Benefits and advantages of using Lano will appear here.",
+      question: t('faq4Question'),
+      answer: t('faq4Answer'),
     },
     {
-      question: "How is my money protected?",
+      question: t('faq5Question'),
       answer:
-        "Information about security measures for protecting your money will appear here.",
+      t('faq5Answer'),
     },
     {
-      question: "What happens if I lose my phone or the encryption keys?",
-      answer: "Recovery procedures and safeguards will be explained here.",
+      question: t('faq6Question'),
+      answer: t('faq6Answer'),
     },
     {
-      question: "Does Lano charge any fees?",
-      answer: "Details about Lano's fee structure will appear here.",
-    },
-    {
-      question: "Can I move my money out instantly and free of charge?",
-      answer: "Information about withdrawals and transfers will appear here.",
-    },
-    {
-      question:
-        "How does Lano keep my data private if it's using Artificial Intelligence?",
-      answer:
-        "Privacy measures and AI data handling practices will be explained here.",
-    },
-    {
-      question: "How does Lano make money?",
-      answer:
-        "Lano's business model and revenue sources will be described here.",
-    },
-    {
-      question: "Who is behind Lano?",
-      answer: "Information about Lano's team and founders will appear here.",
-    },
-    {
-      question: "Who has invested on Lano?",
-      answer: "Details about Lano's investors and funding will appear here.",
+      question: t('faq7Question'),
+      answer: t('faq7Answer'),
     },
   ];
 
