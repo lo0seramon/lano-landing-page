@@ -5,7 +5,7 @@ export const IntroductionSection = (): JSX.Element => {
   const { t } = useLanguage();
   return (
     <section className="flex flex-col items-start gap-4 md:gap-10 w-full">
-      <h1 className="font-['Geist',Helvetica] text-black text-3xl sm:text-6xl md:text-[96px] lg:text-[192px] leading-tight md:leading-[192px] tracking-[-2px] md:tracking-[-9.60px]">
+      <h1 className="font-black text-black w-full font-['Geist',Helvetica] text-7xl sm:text-9xl md:text-[100px] lg:text-[160px] xl:text-[240px] 2xl:text-[436px] tracking-tighter md:tracking-[-10px] lg:tracking-[-21.80px] leading-tight lg:leading-[1]">
         <span className="font-bold tracking-[-4px] md:tracking-[-18.43px]">{t('meetLanoTitle')}</span>
         <span className="tracking-[-4px] md:tracking-[-18.43px]">
           ,<br />

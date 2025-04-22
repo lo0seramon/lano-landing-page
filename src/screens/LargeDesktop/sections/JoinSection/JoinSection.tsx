@@ -3,7 +3,7 @@ import React from "react";
 export const JoinSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-start gap-4 md:gap-6 w-full">
-      <h1 className="font-black text-black text-4xl sm:text-7xl md:text-[clamp(100px,25vw,400px)] tracking-[-4px] md:tracking-[-20px] leading-tight md:leading-[0.74em]">
+      <h1 className="font-black text-black w-full font-['Geist',Helvetica] text-7xl sm:text-9xl md:text-[100px] lg:text-[160px] xl:text-[240px] 2xl:text-[436px] tracking-tighter md:tracking-[-10px] lg:tracking-[-21.80px] leading-tight lg:leading-[1]">
         Free —<br />
         Forever.
       </h1>

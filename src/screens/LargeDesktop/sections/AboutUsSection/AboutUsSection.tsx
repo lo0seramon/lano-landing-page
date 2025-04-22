@@ -31,8 +31,12 @@ const AboutUsSectionContent = (): JSX.Element => {
       </header>
 
       <main className="w-full relative">
-        <h2 className="w-full font-['Geist',Helvetica] font-black text-black text-3xl sm:text-5xl md:text-7xl lg:text-9xl xl:text-[200px] 2xl:text-[436px] tracking-tighter md:tracking-[-10px] lg:tracking-[-21.80px] leading-tight lg:leading-[1]">
-          {t('mainHeading')}
+        <h2 className="w-full font-['Geist',Helvetica] font-black text-black text-7xl sm:text-9xl md:text-[100px] lg:text-[160px] xl:text-[240px] 2xl:text-[436px] tracking-tighter md:tracking-[-10px] lg:tracking-[-21.80px] leading-tight lg:leading-[1]">
+          {(() => {
+  const text = t('mainHeading');
+  const [first, ...rest] = text.split(' ');
+  return <>{first}<br />{rest.join(' ')}</>;
+})()}
         </h2>
 
         <p className="w-full mt-4 sm:mt-8 md:mt-16 lg:mt-24 xl:mt-32 2xl:mt-[436px] font-['Geist_Mono',Helvetica] font-normal text-black text-lg sm:text-2xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-tight md:tracking-[-2px] lg:tracking-[-4.80px] leading-tight lg:leading-[1.2]">
