@@ -41,28 +41,28 @@ export const TestimonialsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col items-start gap-[52px] w-full">
-      <h2 className="self-stretch [font-family:'Geist',Helvetica] font-bold text-black text-8xl tracking-[0] leading-[96px]">
+    <section className="flex flex-col items-start gap-4 md:gap-[52px] w-full">
+      <h2 className="self-stretch [font-family:'Geist',Helvetica] font-bold text-black text-3xl sm:text-5xl md:text-8xl tracking-[0] leading-tight md:leading-[96px]">
       {t('reasonTitle')}
       </h2>
 
-      <div className="flex flex-col items-start gap-8 w-full">
+      <div className="flex flex-col items-start gap-4 md:gap-8 w-full">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="flex items-center gap-10 w-full">
+          <div key={testimonial.id} className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10 w-full">
             <div className="flex flex-col items-start gap-1 flex-1">
-              <h3 className="self-stretch [font-family:'Geist',Helvetica] font-bold text-black text-5xl tracking-[-2.40px] leading-[48px]">
+              <h3 className="self-stretch [font-family:'Geist',Helvetica] font-bold text-black text-xl sm:text-3xl md:text-5xl tracking-[-1px] md:tracking-[-2.40px] leading-tight md:leading-[48px]">
                 {testimonial.title}
               </h3>
-              <p className="self-stretch [font-family:'Geist_Mono',Helvetica] font-normal text-black text-2xl tracking-[-1.20px] leading-6">
+              <p className="self-stretch [font-family:'Geist_Mono',Helvetica] font-normal text-black text-base sm:text-xl md:text-2xl tracking-[-0.5px] md:tracking-[-1.20px] leading-6">
                 {testimonial.description}
               </p>
             </div>
             <div
-              className={`flex w-[88px] h-11 items-center gap-2.5 p-1 rounded-[200px] ${testimonial.active ? "bg-black" : "bg-[#bec5cd]"}`}
+              className={`flex w-[64px] md:w-[88px] h-8 md:h-11 items-center gap-2.5 p-1 rounded-[200px] ${testimonial.active ? "bg-black" : "bg-[#bec5cd]"}`}
             >
               <Switch
                 checked={testimonial.active}
-                className="w-9 h-full bg-white rounded-[200px] shadow-[0px_5.89px_11.78px_#2727271a] data-[state=checked]:bg-white data-[state=unchecked]:bg-white"
+                className="w-6 md:w-9 h-full bg-white rounded-[200px] shadow-[0px_5.89px_11.78px_#2727271a] data-[state=checked]:bg-white data-[state=unchecked]:bg-white"
               />
             </div>
           </div>
@@ -70,8 +70,8 @@ export const TestimonialsSection = (): JSX.Element => {
       </div>
 
       <Card className="w-full bg-black rounded-[5px] overflow-hidden border-none">
-        <CardContent className="p-5">
-          <p className="[font-family:'Geist_Mono',Helvetica] font-normal text-white text-2xl tracking-[-1.20px] leading-6">
+        <CardContent className="p-3 md:p-5">
+          <p className="[font-family:'Geist_Mono',Helvetica] font-normal text-white text-base sm:text-xl md:text-2xl tracking-[-0.5px] md:tracking-[-1.20px] leading-6">
             <span className="font-bold tracking-[-0.29px]">
             {t('notAloneTitle')} <br />
             </span>

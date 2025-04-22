@@ -47,18 +47,18 @@ export const SecuritySection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col items-start gap-6 w-full">
-      <h2 className="font-['Geist_Mono',Helvetica] font-bold text-black text-8xl tracking-[-4.80px] leading-[96px]">
+    <section className="flex flex-col items-start gap-4 md:gap-6 w-full">
+      <h2 className="font-['Geist_Mono',Helvetica] font-bold text-black text-3xl sm:text-5xl md:text-8xl tracking-[-2px] md:tracking-[-4.80px] leading-tight md:leading-[96px]">
         FAQ
       </h2>
 
       <Accordion type="single" collapsible className="w-full">
         {faqItems.map((item, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger className="font-['Geist_Mono',Helvetica] font-bold text-black text-5xl tracking-[-2.40px] leading-[48px] py-4 text-left">
+            <AccordionTrigger className="font-['Geist_Mono',Helvetica] font-bold text-black text-lg sm:text-2xl md:text-5xl tracking-[-1px] md:tracking-[-2.40px] leading-tight md:leading-[48px] py-2 md:py-4 text-left">
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className="font-['Geist_Mono',Helvetica] text-black text-xl">
+            <AccordionContent className="font-['Geist_Mono',Helvetica] text-black text-base md:text-xl">
               {item.answer}
             </AccordionContent>
           </AccordionItem>
