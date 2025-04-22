@@ -2,19 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Lano</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="format-detection" content="telephone=no" />
+    <title>lano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      @import url("https://fonts.googleapis.com/css?family=Geist:400,900,700|Geist+Mono:700,400");
+      @import url("https://fonts.googleapis.com/css?family=Geist:400,900,700|Geist+Mono:400,700");
     </style>
-    <link href="tailwind.css" rel="stylesheet" />
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      * {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0px;
+        height: 100%;
+      }
+      /* a blue color as a generic focus style */
+      button:focus-visible {
+        outline: 2px solid #4a90e2 !important;
+        outline: -webkit-focus-ring-color auto 5px !important;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="./src/index.tsx"></script>
+    <script type="module" src="./src/index.jsx"></script>
   </body>
 </html>

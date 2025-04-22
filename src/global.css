@@ -1,0 +1,38 @@
+/* Estilos globais para garantir responsividade */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 743px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 744px) and (max-width: 1727px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para desktop */
+@media (min-width: 1728px) {
+  html {
+    font-size: 18px;
+  }
+}
