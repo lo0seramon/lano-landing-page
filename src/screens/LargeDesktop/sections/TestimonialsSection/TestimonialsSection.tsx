@@ -73,7 +73,7 @@ export const TestimonialsSection = (): JSX.Element => {
         <CardContent className="p-5">
           <p className="[font-family:'Geist_Mono',Helvetica] font-normal text-white text-2xl tracking-[-1.20px] leading-6">
             <span className="font-bold tracking-[-0.29px]">
-              You are not alone. <br />
+            {t('notAloneTitle')} <br />
             </span>
 
             <span className="tracking-[-0.29px]">

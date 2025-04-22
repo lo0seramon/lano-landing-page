@@ -5,6 +5,15 @@ module.exports = {
     "components/**/*.{ts,tsx}",
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',  // Tablets em modo retrato
+      'lg': '1024px', // Tablets em modo paisagem
+      'xl': '1280px',
+      '2xl': '1400px',
+      'iphone': {'min': '375px', 'max': '428px'}, // iPhone 13/14 (375px-428px)
+      'tablet': {'min': '768px', 'max': '1024px'}, // Tablets
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
