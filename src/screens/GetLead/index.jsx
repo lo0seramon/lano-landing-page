@@ -616,14 +616,6 @@ export const GetLead = ({ navigateTo }) => {
                 </div>
               )}
             </div>
-
-            <div
-              className="frame-18"
-              onClick={() => navigateTo("payment")}
-              style={{ cursor: "pointer" }}
-            >
-              <div className="text-wrapper-14">Send</div>
-            </div>
           </div>
         )}
       </div>
