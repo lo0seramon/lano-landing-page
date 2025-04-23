@@ -319,7 +319,7 @@ export const LargeDesktop = () => {
               <>
                 <div className="text-wrapper-7">lano</div>
 
-                <div className="text-wrapper-8">Get early access ↗</div>
+                  <a href="get-lead" className="text-wrapper-8">Get early access ↗</a>
 
                 <div className="frame-7">
                   <div className="frame-8">
